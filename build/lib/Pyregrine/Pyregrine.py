@@ -533,17 +533,17 @@ if __name__ == "__main__":
     peregrine = Pyregrine()
     
     feeds = peregrine.get_entity_list("feed", orderBy="name")
-    print feeds.url
+    print(feeds.url)
 
     tree = ElementTree.fromstring(feeds.text)
     
     #print tree.findall('.//')
     
     for elem in tree.findall(".//"):
-        print elem.tag
-        print elem.text
+        print(elem.tag)
+        print(elem.text)
     
-    print
+    print()
     
     feeds = peregrine.get_entity_list("process", orderBy="name")
 
@@ -551,10 +551,10 @@ if __name__ == "__main__":
     
     
     for elem in tree.findall(".//"):
-        print elem.tag
-        print elem.text
+        print(elem.tag)
+        print(elem.text)
     
-    print
+    print()
 
     clusters= peregrine.get_entity_list("cluster")
     
@@ -563,8 +563,8 @@ if __name__ == "__main__":
     #print tree.findall('.//')
     
     for elem in tree.findall(".//"):
-        print elem.tag
-        print elem.text
+        print(elem.tag)
+        print(elem.text)
 
     
         

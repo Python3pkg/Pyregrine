@@ -1,1 +1,1 @@
-import Pyregrine
+from . import Pyregrine
